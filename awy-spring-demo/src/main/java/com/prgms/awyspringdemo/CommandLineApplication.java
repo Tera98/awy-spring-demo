@@ -1,5 +1,8 @@
 package com.prgms.awyspringdemo;
 
+import com.prgms.awyspringdemo.voucher.FixedAmountVoucher;
+import com.prgms.awyspringdemo.voucher.Voucher;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

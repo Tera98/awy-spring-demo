@@ -1,4 +1,6 @@
-package com.prgms.awyspringdemo;
+package com.prgms.awyspringdemo.order;
+
+import com.prgms.awyspringdemo.voucher.Voucher;
 
 import java.util.List;
 import java.util.Optional;
@@ -24,6 +26,10 @@ public class Order {
         this.customerId = customerId;
         this.orderItems = orderItems;
         this.voucher = Optional.of(voucher);
+    }
+
+    public UUID getOrderId() {
+        return orderId;
     }
 
     public long totalAmount(){

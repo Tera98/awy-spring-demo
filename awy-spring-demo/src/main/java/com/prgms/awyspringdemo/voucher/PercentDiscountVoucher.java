@@ -1,4 +1,4 @@
-package com.prgms.awyspringdemo;
+package com.prgms.awyspringdemo.voucher;
 
 import java.util.UUID;
 

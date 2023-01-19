@@ -1,4 +1,4 @@
-package com.prgms.awyspringdemo;
+package com.prgms.awyspringdemo.order;
 
 import java.util.UUID;
 

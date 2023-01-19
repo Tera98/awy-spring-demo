@@ -1,8 +1,13 @@
-package com.prgms.awyspringdemo;
+package com.prgms.awyspringdemo.order;
+
+import com.prgms.awyspringdemo.VersionProvider;
+import com.prgms.awyspringdemo.voucher.VoucherService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.UUID;
 
+@Service
 public class OrderService {
     private final VoucherService voucherService;
     private final OrderRepository orderRepository;
@@ -14,8 +19,7 @@ public class OrderService {
 
     public Order createOrder(UUID customerId, List<OrderItem> orderItem) {
         var order = new Order(UUID.randomUUID(), customerId, orderItem);
-        orderRepository.insert(order);
-        return order;
+        return orderRepository.insert(order);
     }
 
     public Order createOrder(UUID customerId, List<OrderItem> orderItem, UUID voucherId) {
